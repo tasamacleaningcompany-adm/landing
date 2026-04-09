@@ -1,0 +1,263 @@
+/* СКИДАННЯ СТАНДАРТНИХ СТИЛІВ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* БАЗОВІ НАЛАШТУВАННЯ */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #fff8f8;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(120deg, #af25da, #af25da);
+  color: rgb(250, 250, 250);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/* КНОПКА */
+.btn {
+  display: inline-block;
+  background: rgb(252, 252, 252);
+  color: #28c268;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* СЕКЦІЇ */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ПЕРЕВАГИ */
+.benefits ul {
+  list-style: none;
+  max-width: 500px;
+  margin: auto;
+}
+
+.benefits li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/* КОНТАКТИ */
+.contact {
+  background: #af25da;
+  text-align: center;
+}
+/* АДАПТАЦІЯ ПІД ТЕЛЕФОН */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+
+  .btn {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+}
+/* ФОРМА */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  border: none;
+}
+/* ПОСЛУГИ */
+.services {
+  background: #af25da;
+}
+
+.service-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background: #8a088f;
+  padding: 25px;
+  border-radius: 8px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(228, 36, 36, 0.05);
+}
+
+.service-card h3 {
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-weight: bold;
+  color: #21e774;
+  font-size: 18px;
+}
+/* ВІДГУКИ */
+.reviews {
+  background: #af25da;
+}
+
+.review-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.review-card {
+  background: #8a088f;
+  padding: 20px;
+  border-radius: 8px;
+  width: 260px;
+  font-size: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.review-card span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+/* CTA */
+.cta {
+  background: #af25da;
+  color: #ffffff;
+  text-align: center;
+}
+
+.cta .btn {
+  margin-top: 20px;
+}
+/* HEADER */
+.header {
+  background: white;
+  padding: 15px 40px;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+/* ЛІВО — логотип */
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 55px;
+}
+
+/* ЦЕНТР — назва */
+.header-center {
+  text-align: center;
+}
+
+.brand-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+/* ПРАВО — кнопка */
+.header-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-btn {
+  background: #27ae60;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.logo-img {
+  height: 150px;
+  width: auto;
+}
+/* ===== МОБІЛЬНА ШАПКА ===== */
+@media (max-width: 768px) {
+
+  .header {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 15px 20px;
+    text-align: center;
+  }
+
+  .header-left,
+  .header-center,
+  .header-right {
+    justify-content: center;
+  }
+
+  .logo-img {
+    height: 45px;
+  }
+
+  .brand-name {
+    font-size: 20px;
+  }
+
+  .header-btn {
+    width: 100%;
+    max-width: 220px;
+    margin-top: 10px;
+  }
+}
