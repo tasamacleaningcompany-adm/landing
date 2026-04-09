@@ -1,197 +1,34 @@
-/* СКИДАННЯ СТАНДАРТНИХ СТИЛІВ */
+/* =========================
+   RESET
+========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* БАЗОВІ НАЛАШТУВАННЯ */
+/* =========================
+   BASE
+========================= */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #2398f8;
-}
-
-/* HERO */
-.hero {
-  background: linear-gradient(120deg, #af25da, #af25da);
-  color: rgb(255, 255, 255);
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.hero h1 {
-  font-size: 36px;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-
-/* КНОПКА */
-.btn {
-  display: inline-block;
-  background: rgb(91, 195, 255);
-  color: #000000;
-  padding: 15px 30px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-/* СЕКЦІЇ */
-section {
-  padding: 60px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
-section h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* ПЕРЕВАГИ */
-.benefits ul {
-  list-style: none;
-  max-width: 500px;
-  margin: auto;
-}
-
-.benefits li {
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-
-/* КОНТАКТИ */
-.contact {
-  background: #af25da;
-  text-align: center;
-}
-/* АДАПТАЦІЯ ПІД ТЕЛЕФОН */
-@media (max-width: 600px) {
-  .hero h1 {
-    font-size: 26px;
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
-
-  section {
-    padding: 40px 15px;
-  }
-
-  .btn {
-    padding: 12px 20px;
-    font-size: 16px;
-  }
-}
-/* ФОРМА */
-form {
-  max-width: 400px;
-  margin: 20px auto;
-  display: flex;
-  flex-direction: column;
-}
-
-form input {
-  padding: 12px;
-  margin-bottom: 15px;
-  font-size: 16px;
-  border: 1px solid #000000;
-  border-radius: 4px;
-}
-
-form button {
-  border: none;
-}
-/* ПОСЛУГИ */
-.services {
-  background: #af25da;
-}
-
-.service-list {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.service-card {
-  background: #8a088f;
-  padding: 25px;
-  border-radius: 8px;
-  width: 260px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(228, 36, 36, 0.05);
-}
-
-.service-card h3 {
-  margin-bottom: 10px;
-}
-
-.service-card p {
-  font-size: 15px;
-  margin-bottom: 15px;
-}
-
-.price {
-  font-weight: bold;
-  color: #33cefd;
-  font-size: 18px;
-}
-/* ВІДГУКИ */
-.reviews {
-  background: #af25da;
-}
-
-.review-list {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.review-card {
-  background: #8a088f;
-  padding: 20px;
-  border-radius: 8px;
-  width: 260px;
-  font-size: 15px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-}
-
-.review-card span {
-  display: block;
-  margin-top: 10px;
-  font-weight: bold;
-}
-/* CTA */
-.cta {
+  font-family: 'Inter', Arial, sans-serif;
   background: #af25da;
   color: #ffffff;
-  text-align: center;
+  line-height: 1.6;
 }
 
-.cta .btn {
-  margin-top: 20px;
+html {
+  scroll-behavior: smooth;
 }
-/* HEADER */
+
+/* =========================
+   HEADER
+========================= */
 .header {
   background: rgb(151, 243, 255);
   padding: 15px 40px;
-
   display: grid;
   grid-template-columns: auto 1fr auto;
-  align-items: center;
-}
-
-/* ЛІВО — логотип */
-.header-left {
-  display: flex;
   align-items: center;
 }
 
@@ -199,7 +36,6 @@ form button {
   height: 55px;
 }
 
-/* ЦЕНТР — назва */
 .header-center {
   text-align: center;
 }
@@ -209,391 +45,155 @@ form button {
   font-size: 26px;
   font-weight: 600;
   color: #8d0081;
-  letter-spacing: 1px;
-}
-
-/* ПРАВО — кнопка */
-.header-right {
-  display: flex;
-  justify-content: flex-end;
 }
 
 .header-btn {
   background: #c312d3;
-  color: #ffffff;
+  color: #fff;
   padding: 10px 20px;
-  text-decoration: none;
   border-radius: 4px;
+  text-decoration: none;
   font-weight: bold;
 }
 
-.logo-img {
-  height: 150px;
-  width: auto;
-}
-/* ===== МОБІЛЬНА ШАПКА ===== */
-@media (max-width: 768px) {
-
-  .header {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 15px 20px;
-    text-align: center;
-  }
-
-  .header-left,
-  .header-center,
-  .header-right {
-    justify-content: center;
-  }
-
-  .logo-img {
-    height: 45px;
-  }
-
-  .brand-name {
-    font-size: 20px;
-  }
-
-  .header-btn {
-    width: 100%;
-    max-width: 220px;
-    margin-top: 10px;
-  }
-}
-.services {
-  padding: 80px 20px;
-  background: #af25da;
+/* =========================
+   HERO
+========================= */
+.hero {
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("images/hero.jpg") center / cover no-repeat;
+  padding: 140px 20px;
   text-align: center;
 }
 
-.services h2 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.services-subtitle {
+.hero-content {
   max-width: 700px;
-  margin: 0 auto 50px;
-  color: #f70000;
-  font-size: 18px;
+  margin: auto;
 }
 
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-  max-width: 1100px;
-  margin: 0 auto;
+.hero h1 {
+  font-size: 44px;
+  margin-bottom: 20px;
 }
 
-.service-card {
-  background: #a10094;
-  padding: 30px;
-  border-radius: 14px;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-  transition: transform 0.3s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-5px);
-}
-
-.service-card h3 {
+.hero p {
   font-size: 20px;
-  margin-bottom: 12px;
+  margin-bottom: 30px;
+  color: #f0f0f0;
 }
 
-.service-card p {
-  font-size: 16px;
-  color: #ffffff;
-  line-height: 1.5;
-}
-.trust {
-  padding: 80px 20px;
-  background: #af25da;
-  text-align: center;
-}
-
-.trust h2 {
-  font-size: 34px;
-  margin-bottom: 10px;
-}
-
-.trust-subtitle {
-  max-width: 700px;
-  margin: 0 auto 30px;
-  color: #ffffff;;
+.hero-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #0f8df5, #2563eb);
+  color: #fff;
+  padding: 16px 40px;
+  border-radius: 40px;
   font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 12px 30px rgba(15,141,245,0.35);
+  transition: transform .3s ease, box-shadow .3s ease;
 }
 
-.trust-list {
-  list-style: none;
-  padding: 0;
-  max-width: 600px;
-  margin: 0 auto 50px;
+.hero-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(15,141,245,0.45);
+}
+
+.hero-note {
+  display: block;
+  margin-top: 18px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+section h2 {
   text-align: center;
+  font-size: 34px;
+  margin-bottom: 20px;
 }
 
-.trust-list li {
-  margin-bottom: 12px;
-  font-size: 16px;
-  position: relative;
-  padding-left: 22px;
-}
-
-.trust-list li::before {
-  content: "✔";
-  position: absolute;
-  left: 0;
-  color: #0f8df5;
-}
-
-.reviews {
+/* =========================
+   SERVICES / REVIEWS
+========================= */
+.service-list,
+.reviews-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 25px;
-  max-width: 1100px;
-  margin: 0 auto;
 }
 
+.service-card,
 .review {
-  background: #a10094;
-  padding: 25px;
-  border-radius: 14px;
+  background: #ffffff;
+  color: #333;
+  padding: 32px;
+  border-radius: 18px;
   text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.service-card:hover,
+.review:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+}
+
+/* =========================
+   CONTACT
+========================= */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form button {
+  padding: 14px;
   font-size: 16px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: none;
 }
 
-.review span {
-  display: block;
-  margin-top: 15px;
-  font-weight: 600;
-}
-.hero-content {
-  max-width: 700px;
-  color: #ffffff;
-}
-
-.hero h1 {
-  font-size: 44px;
-  margin-bottom: 20px;
-  line-height: 1.2;
-}
-
-.hero p {
-  font-size: 20px;
-  margin-bottom: 30px;
-  color: #f0f0f0;
-}
-
-.hero-btn {
-  display: inline-block;
-  background: #2e7d32;
-  color: #fff;
-  padding: 15px 35px;
-  border-radius: 30px;
-  font-size: 18px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.hero-btn:hover {
-  background: #256428;
-}
-
-.hero-note {
-  display: block;
-  margin-top: 18px;
-  font-size: 14px;
-  color: #ddd;
-}
-
-/* 📱 Адаптація під телефон */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 32px;
-  }
-
-  .hero p {
-    font-size: 18px;
-  }
-}.hero-content {
-  max-width: 700px;
-  color: #ffffff;
-}
-
-.hero h1 {
-  font-size: 44px;
-  margin-bottom: 20px;
-  line-height: 1.2;
-}
-
-.hero p {
-  font-size: 20px;
-  margin-bottom: 30px;
-  color: #f0f0f0;
-}
-
-.hero-btn {
-  display: inline-block;
+form button {
   background: #0f8df5;
   color: #fff;
-  padding: 15px 35px;
-  border-radius: 30px;
-  font-size: 18px;
-  text-decoration: none;
-  transition: background 0.3s ease;
+  cursor: pointer;
 }
 
-.hero-btn:hover {
-  background: #000000;
-}
-
-.hero-note {
-  display: block;
-  margin-top: 18px;
-  font-size: 14px;
-  color: #ddd;
-}
-
-/* 📱 Адаптація під телефон */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 32px;
-  }
-
-  .hero p {
-    font-size: 18px;
-  }
-}
 /* =========================
-   MOBILE ADAPTATION
-   ========================= */
-@media (max-width: 768px) {
-
-  body {
-    font-size: 16px;
-  }
-
-  section {
-    padding: 60px 16px;
-  }
+   SCROLL ANIMATIONS
+========================= */
+.animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity .8s ease, transform .8s ease;
 }
-.hero h1 {
-    font-size: 30px;
-    line-height: 1.25;
-  }
 
-  .hero p {
-    font-size: 17px;
-  }
-
-  .hero-btn {
-    width: 100%;
-    text-align: center;
-    padding: 16px;
-    font-size: 18px;
-  }
-
-  .hero-note {
-    font-size: 13px;
-  }
-  @media (max-width: 768px) {
-
-  .services h2 {
-    font-size: 28px;
-  }
-
-  .services-subtitle {
-    font-size: 16px;
-    margin-bottom: 35px;
-  }
-
-  .service-card {
-    padding: 22px;
-  }
-
-  .service-card h3 {
-    font-size: 18px;
-  }
-
-  .service-card p {
-    font-size: 15px;
-  }
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
 }
-@media (max-width: 768px) {
 
-  .services h2 {
-    font-size: 28px;
-  }
-
-  .services-subtitle {
-    font-size: 16px;
-    margin-bottom: 35px;
-  }
-
-  .service-card {
-    padding: 22px;
-  }
-
-  .service-card h3 {
-    font-size: 18px;
-  }
-
-  .service-card p {
-    font-size: 15px;
-  }
-}
-@media (max-width: 768px) {
-
-  .trust h2 {
-    font-size: 28px;
-  }
-
-  .trust-subtitle {
-    font-size: 16px;
-  }
-
-  .trust-list {
-    padding-left: 0;
-  }
-
-  .trust-list li {
-    font-size: 15px;
-  }
-
-  .review {
-    font-size: 15px;
-  }
-}
-@media (max-width: 768px) {
-
-  form input,
-  form textarea,
-  form button {
-    width: 100%;
-    font-size: 16px;
-  }
-
-  form button {
-    padding: 16px;
-    font-size: 18px;
-  }
-}
 /* =========================
-   HARD FIX REVIEWS MOBILE
-   ========================= */
+   MOBILE
+========================= */
 @media (max-width: 768px) {
-
-  section .reviews {
-    display: block !important;
-  }
-
-  section .review {
-    width: 100% !important;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-  }
+  .hero h1 { font-size: 30px; }
+  .hero p { font-size: 17px; }
+  .hero-btn { width: 100%; }
 }
