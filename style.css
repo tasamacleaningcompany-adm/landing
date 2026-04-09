@@ -582,3 +582,18 @@ form button {
     font-size: 18px;
   }
 }
+/* =========================
+   HARD FIX REVIEWS MOBILE
+   ========================= */
+@media (max-width: 768px) {
+
+  section .reviews {
+    display: block !important;
+  }
+
+  section .review {
+    width: 100% !important;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+}
